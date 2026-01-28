@@ -1,5 +1,2 @@
-build/math_utils.o: src/app.c include/app.h include/math_utils.h \
- include/string_utils.h
-include/app.h:
+build/math_utils.o: src/math_utils.c include/math_utils.h
 include/math_utils.h:
-include/string_utils.h:

@@ -17,8 +17,8 @@ app: $(OBJS)
 	@echo "building target"
 	$(CC) $(CFLAGS) $^ -o $@
 
-$(OBJS):$(SRCS)
-#$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+#$(OBJS):$(SRCS)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	mkdir -p $(OBJ_DIR)
 	@echo "building object"
 	$(CC) $(CFLAGS) -c $< -o $@
